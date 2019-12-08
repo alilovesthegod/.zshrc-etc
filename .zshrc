@@ -329,17 +329,17 @@ setxkbmap -option ctrl:ralt_rctrl
 
 #xmodmap -e " = btn shift+btn ?? alt+btn maybe-altgr-btn"
 
-xmodmap -e "keycode 67 = Left Left Left F1 F1" ##F1
-xmodmap -e "keycode 68 = Down Down Down F2 F2" #F2
-xmodmap -e "keycode 69 = Up Up  Up NoSymbol Up" #F3 
-xmodmap -e "keycode 70 = Right Right Right F4 F4" #F4
+xmodmap -e "keycode 67 = Insert Insert Insert F1 F1 " ##F1
+xmodmap -e "keycode 68 = Prior Prior Prior F2 F2" #F2
+xmodmap -e "keycode 69 = Next Next Next F3 F3" #F3 
+xmodmap -e "keycode 70 = Insert Insert Insert F4 F4" #F4
 
 #xmodmap -e "keycode 71 = Down NoSymbol Down NoSymbol Down" #F5
 #xmodmap -e "keycode 72 =p"#F6
 
-xmodmap -e "keycode 73 = Insert Insert Insert F7 F7" #F7
-#xmodmap -e "keycode 74 = Next Next Next F8 F8" #F8
-#xmodmap -e "keycode 75 = Prior Prior Prior F9 F9" #F9
+#xmodmap -e "keycode 73 = Insert Insert Insert F7 F7" #F7
+#xmodmap -e "keycode 74 = Up Up Up F8 F8" #F8
+#xmodmap -e "keycode 75 = Down Down Down F9 F9" #F9
 ###xmodmap -e "keycode 76 = Left  Right Right F10 F10" #f10 
 
 ##xmodmap -e "keycode 95 = F4 F4 F4 F4 F4"  #F11
