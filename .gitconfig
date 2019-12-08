@@ -18,7 +18,9 @@
 	cm = commit -am
 	ca = commit -am
 	mm = fetch . dev:master
-[credential]
+
+
+
 [core]
 	editor = gedit
 
@@ -44,6 +46,5 @@
 [filesystem "Ubuntu|11.0.4|/dev/sdb4"]
 	timestampResolution = 5000 nanoseconds
 	minRacyThreshold = 7016 microseconds
-[github]
-	user = alilovesthegod
-	token = https://github.com/settings/tokens/297406817
+[credential]
+	helper = cache
