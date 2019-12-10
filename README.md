@@ -619,8 +619,33 @@ pdfjam file1.pdf file2.pdf file3.pdf --no-landscape --frame true --nup 2x2 --suf
 ### git
 git config --global credential.helper cache
 
+##java versions
+update-java-alternatives --list
+sudo apt install openjdk-8-jdk openjdk-8-jre
+sudo update-java-alternatives --set /path/to/java/version
+java -version
+
+sdk install java 11.0.2-open
+
+#
+	!~/.Xmodmap
+	clear control
+	add control = Control_L Control_R Right
+ 
+	xmodmap ~/.Xmodmap
+
+```
+maybe to run it in your ~/.xinitrc file:
+
+if [ -s ~/.Xmodmap ]; then
+    xmodmap ~/.Xmodmap
+fi
+```
 
 
+# grails
+## -> grails 5?
+   gradle help --scan
 
 
 

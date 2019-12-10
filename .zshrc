@@ -4,6 +4,10 @@ done;
 
 export CDPATH=CDPATH:~/:~/snap:/
 
+## java
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export JRE_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+
 
 alias ctl=systemctl
 alias gt=gnome-terminal
@@ -351,10 +355,15 @@ xmodmap -e "keycode 70 = Insert Insert Insert F4 F4" #F4
 #xmodmap -e "keycode 114 = Control_R Control_R Control_R Control_R Control_R" # prior 'Right'
 #xmodmap -e "keycode 105 = Right Right Right Right Right"     #prior 'Control_R'
 
+
+
 qr() {
 sudo vi home/ali/DEVeloper/qr-nanoc/qr/content/qr.md
 v}
 #gsettings set org.gnome.desktop.interface gtk-key-theme "Emacs"
 alias ij='coproc intellij-idea-ultimate'
 
-alias m='sudo emacs .zshrc *marks'
+alias m='sudo emacs ~/.zshrc ~/README.md'
+alias f='find . -name'
+
+#xmodmap ~/.Xmodmap
