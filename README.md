@@ -1,4 +1,6 @@
+
 # z .zshrc  and marks
+
 
 -->  apt
 au - sudo apt update
@@ -635,7 +637,8 @@ sdk install java 11.0.2-open
 	xmodmap ~/.Xmodmap
 
 ```
-maybe to run it in your ~/.xinitrc file:
+)
+maybe to run it in your ~/.xinitr file:
 
 if [ -s ~/.Xmodmap ]; then
     xmodmap ~/.Xmodmap
@@ -647,7 +650,37 @@ fi
 ## -> grails 5?
    gradle help --scan
 
+```
+brew install gradle-completion
 
 
+```
+
+# Firefox
 
 
+    Add ^ to search for matches in your browsing history.
+    Add * to search for matches in your bookmarks.
+    Add + to search for matches in pages you've tagged.
+    Add % to search for matches in your currently open tabs.
+    Add # to search for matches in page titles.
+    Add $ to search for matches in web addresses (URLs).
+    Add ? to search for matches in suggestions. 
+
+
+     
+     compile 'org.grails.plugins:spring-security-core:4.0.0.RC2'
+
+o     
+     
+     grails compile
+     
+     grails s2-quickstart goauth005 User Role
+     
+     grails create-controller goauth005.Secure
+
+!.Xmodmap
+clear control
+add control = Control_L Control_R Right
+keycode 105 = Left
+keycode 113 = Right

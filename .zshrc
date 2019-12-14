@@ -260,7 +260,12 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 # Load theme file
 zplug 'dracula/zsh', as:theme
 
-zplug voronkovich/gitignore.plugin.zsh, use:zshrc, as:command   
+zplug voronkovich/gitignore.plugin.zsh, use:zshrc, as:command
+
+#( zplug "plugins/gradle",                   from:oh-my-zsh, if:"(( $+commands[gradle] ))"
+#( zplug "plugins/grails",                   from:oh-my-zsh, if:"(( $+commands[grails] ))"
+
+
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -327,6 +332,7 @@ sudo chmod 0665 ~/*marks
 }
 
 #keyboard remap
+
 # setxkbmap -option ctrl:swapcaps     # Swap Left Control and Caps Lock
 #Left
 setxkbmap -option ctrl:ralt_rctrl
@@ -355,6 +361,8 @@ xmodmap -e "keycode 70 = Insert Insert Insert F4 F4" #F4
 #xmodmap -e "keycode 114 = Control_R Control_R Control_R Control_R Control_R" # prior 'Right'
 #xmodmap -e "keycode 105 = Right Right Right Right Right"     #prior 'Control_R'
 
+xmodmap -e "keycode 114 =  Right Right Right Right Right"
+# end keyboard remap
 
 
 qr() {
@@ -366,4 +374,5 @@ alias ij='coproc intellij-idea-ultimate'
 alias m='sudo emacs ~/.zshrc ~/README.md'
 alias f='find . -name'
 
-#xmodmap ~/.Xmodmap
+xmodmap ~/.Xmodmap #FIXME maybe not needed
+alias g='./gradlew '
